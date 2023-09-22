@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CardenX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon - logo.png" type="image/x-icon">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/7b8daf54c9.js" crossorigin="anonymous"></script>
+</head>
+<body id="page">
+    <!-- header -->
+    <header id="header">
+        <a href="" class="link link--logo" id="link--logo">
+            <img src="favicon - logo.png" alt=""> <span>Carden</span><b>X</b>
+        </a>
+        <nav class="nav" id="nav">
+            <a href="" class="link link--nav"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="" class="link link--nav"><i class="fa-solid fa-address-card"></i> Services</a>
+            <a href="" class="link link--nav"><i class="fa-solid fa-star"></i> Reviews</a>
+            <a href="" class="link link--nav"><i class="fa-solid fa-users"></i> Our Community</a>
+        </nav>
+        <section class="join" id="join">
+            <a href="" class="link link--logIn"><i class="fa-solid fa-user-large"></i> Log In</a>
+            <a href="" class="link link--tryfree"><i class="fa-solid fa-play"></i> Start Trial</a>
+            <button class="ld--mode" id="ld--mode" onclick="switchButton();">
+                <div class="switchMode" id="switchMode"></div>
+            </button>
+            <button class="menu" id="view" onclick="show()">|||</button>
+            <button class="menu" id="hide" onclick="hide()">X</button>
+        </section>
+    </header>
+
+    <!-- heroSection -->
+    <main id="main">
+        <section class="overview" id="overview">
+            <span class="ovtxt ovtxt--subtitle">Get your  card in a single click</span>
+            <span class="ovtxt ovtxt--title">Generate your personalized <br>card uniquely designed <br>only for you</span>
+            <span class="ovtxt ovtxt--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius ea, pariatur inventore quos beatae numquam expedita at saepe! Dignissimos, optio consequatur ad rerum quod ea neque quae! Rem, vitae adipisci.</span>
+            <a href="" class="link link--tryPro" id="link--tryPro"><i class="fa-solid fa-unlock"></i> Unlock Pro</a>
+        </section>
+        <img src="heroImage.png" alt="">
+    </main>
+
+    <!-- whyCardenX -->
+    <section class="whyCardenX" id="whyCardenX">
+        <div class="why">
+            <h3 class="whyHead whyhead--1">lorem Ipsum</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugit, alias mollitia excepturi provident cupiditate voluptatibus repudiandae voluptas? Iste ratione quisquam soluta quam libero maiores adipisci sapiente illo tempore consectetur!</p>
+        </div>
+        <div class="why">
+            <h3 class="whyHead whyhead--2">lorem Ipsum</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugit, alias mollitia excepturi provident cupiditate voluptatibus repudiandae voluptas? Iste ratione quisquam soluta quam libero maiores adipisci sapiente illo tempore consectetur!</p>
+        </div>
+        <div class="why">
+            <h3 class="whyHead whyhead--3">lorem Ipsum</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam fugit, alias mollitia excepturi provident cupiditate voluptatibus repudiandae voluptas? Iste ratione quisquam soluta quam libero maiores adipisci sapiente illo tempore consectetur!</p>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+        <section class="conclusion" id="conclusion">
+            <span class="cntxt cntxt--title">Want to contact us?</span>
+            <span class="cntxt cntxt--description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur cumque nobis maxime vero corporis ea! Tempore autem provident tenetur fuga, qui eaque esse possimus, amet quia deleniti assumenda labore accusamus!</span>
+            <span class="social" id="social">
+                <a href="" class="link link--social"><i class="fa-brands fa-facebook"></i></a>
+                <a href="" class="link link--social"><i class="fa-brands fa-twitter"></i></a>
+                <a href="" class="link link--social"><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="" class="link link--social"><i class="fa-brands fa-linkedin"></i></a>
+            </span>
+        </section>
+        <form action="" id="form">
+            <div class="data data--name">
+                <input type="text" name="fname" id="fname" placeholder="First Name">
+                <input type="text" name="lname" id="lname" placeholder="Last Name">
+            </div>
+            <div class="data data--contact">
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <input type="text" name="number" id="number" placeholder="Contact Number">
+            </div>
+            <textarea name="message" id="message" placeholder="Your message"></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+@import url('styleAnimation.css');
+:root {font-size: 16px; box-sizing: border-box;}
+*, *::after, *::before {padding: 0; margin: 0; box-sizing: inherit;}
+
+/* header */
+header {
+    display: flex; align-items: center; justify-content: space-between; min-height: 5em; padding: 1em;
+    position: sticky; top: 0; background-color: white;
+}
+.link {text-decoration: none; font-size: 1em; padding: 0.5em 1em; margin: 0 0.5em 0 0; border-radius: 0.5em;}
+.link--logo img {height: 1.5em;}
+.link--logo {display: flex; align-items: center;}
+.link--logo span {font-size: 1.5rem; margin: 0 0 0 0.3em; color: rgb(95, 183, 218);}
+.link--logo b {font-size: 1.7em; color: gray;}
+.link--nav {color: gray;} .link--nav:hover {color: rgb(39, 162, 210);}
+.join {display: flex; align-items: center;}
+.join .link{font-size: 0.9em; padding: 0.5em 1em;}
+.link--logIn {color: rgb(39, 162, 210); border: 0.1em solid;} .link--logIn:hover {color: gray;}
+.link--tryfree {background-color: gray; color: white;} .link--tryfree:hover {background-color: rgb(39, 162, 210);}
+.ld--mode {width: 2.5em; height: 1.5em; border: 0.2em solid rgb(39, 162, 210); background-color: rgb(39, 162, 210); cursor: pointer; display: flex;}
+.ld--mode .switchMode {height: 100%; width: 50%; background-color: white;}
+.menu {font-size: 1em; margin: 0 0 0 0.5em; font-weight: bold; background: transparent; border: none; color: transparent; position: fixed;}
+#view {rotate: 90deg;}
+
+/* main */
+main {display: flex; align-items: center; gap: 5em; padding: 6em 8em; background-color: rgb(48, 170, 218);}
+main img {height: 20em;}
+.ovtxt {display: block;}
+.ovtxt--subtitle {font-size: 1rem; margin: 0 0 0.7em 0; font-weight: bold; color: black;}
+.ovtxt--title {font-size: 3em; color: white;}
+.ovtxt--description {font-size: 1em; margin: 1.5em 0 3em 0; color: rgb(50,50,50); width: 65%;}
+.link--tryPro {color: black; background-color: white;} .link--tryPro:hover {background-color: black; color: gray;}
+
+/* whyCardenX */
+.whyCardenX {
+    display: flex; padding: 6em 8em; gap: 3em; text-align: center;
+}
+.why {display: flex; flex-direction: column; gap: 1.2em;}
+.why p {color: gray;}
+
+/* footer */
+footer {display: flex; align-items: flex-start; padding: 5em 8em; background-color: rgb(48, 170, 218); gap: 5em;}
+.conclusion, form {width: 100%;}
+.cntxt {display: block;}
+.cntxt--title {font-size: 2em; color: white;}
+.cntxt--description {margin: 1em 0;}
+.social {display: block; margin: 2em 0;}
+.social .link {padding: 0; color: black;} .social .link:hover {color: white;}
+form {
+    display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 1em;
+}
+.data {display: flex; justify-content: center; align-items: center; width: 100%; gap: 2em;}
+.data input {width: 100%; padding: 0.7em; border: none; border-radius: 0.5em;}
+textarea {display: block; width: 100%; padding: 1em; min-height: 6em; border: none; border-radius: 0.5em;}
+input[type=submit] {width: 100%; padding: 0.7em; border: none; border-radius: 0.5em; background-color: black; color: white; cursor: pointer;} input[type=submit]:hover {color: gray;}
+
+
+@media (max-width: 1024px) {
+    :root {font-size: 14px;}
+    .link {font-size: 0.8em;}
+    .join .link {font-size: 0.8em;}
+    .ovtxt--title {font-size: 2.5em;}
+    .ld--mode {height: 1.2em;}
+}
+@media (max-width: 768px) {
+    :root {font-size: 12px;}
+    .ovtxt--title {font-size: 2em;}
+    .ovtxt--description {width: 100%;}
+    footer {padding: 5em; gap: 3em;}
+    .data {gap: 0.5em;}
+    .data input {font-size: 0.8em;}
+}
+@media (max-width: 426px) {
+    :root {font-size: 10.5px;}
+    .nav {
+        position: fixed; top: 5em; right: -100%; width: 100%; height: 100vh; background-color: white;
+        display: flex; flex-direction: column; align-items: center;
+    }
+    .link--nav {margin: 1em 0 0 0;}
+    .menu {display: inline-block; position: static; color: gray; font-weight: bold; cursor: pointer; width: 1em;}
+    #hide {display: none;}
+    .ld--mode {height: 0.9em; width: 2em;}
+    main {flex-direction: column; padding: 5em;}
+    .ovtxt--title {font-size: 1.8em;}
+    .ovtxt--description {width: 80%;}
+    .whyCardenX {flex-direction: column; gap: 5em;}
+    footer {flex-direction: column;}
+}
+@media (max-width: 320px) {
+    :root {font-size: 9px;}
+}
